@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// 1) Create a component
+function App(){
+	const message = 'Enter an number';
+	return(
+        <div>
+            <p>{message}</p>
+            <input type="number" min={18} style={{color:'green'}} />
+        </div>
+	);
 }
-
-export default App;
+// 2) Export the compnent
+export default App
