@@ -1,12 +1,14 @@
-// 1) Create a component
+import ProfileCard from './ProfileCard';
+
 function App(){
-	const message = 'Enter an number';
 	return(
         <div>
-            <p>{message}</p>
-            <input type="number" min={18} style={{color:'green'}} />
+            <div>The Mushroom Circle</div>
+            <ProfileCard title = "Amanita" handle="@PinkAgaric01"/>
+            <ProfileCard title = "Stropharia" handle="@Verdigris_Slime"/>
+            <ProfileCard title = "Lactarius" handle="@IndigoMilk90"/>
         </div>
 	);
 }
-// 2) Export the compnent
-export default App
+
+export default App;
